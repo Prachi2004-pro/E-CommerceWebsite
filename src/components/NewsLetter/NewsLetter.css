@@ -1,0 +1,62 @@
+.news-letter{
+    width: 65%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 0px 140px;
+    margin-bottom: 150px;
+    background: linear-gradient(180deg,white, #eb90e0f3, white 100%);
+    gap: 30px;
+}
+
+.news-letter h1{
+    color: #171717;
+    font-size: 55px;
+    font-weight: 600;
+}
+
+.news-letter p{
+    color: #171717;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.news-letter div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    width: 730px;
+    height: 70px;
+    border-radius: 20px;
+    border: 1px solid #e3e3e3;
+}
+
+.news-letter input{
+    width: 500px;
+    margin-left: 30px;
+    border: none;
+    outline: none;
+    color: #616161;
+    font-family: Poppins;
+    font-size: 20px;
+}
+
+.news-letter div button{
+    width: 200px;
+    height: 70px;
+    border-radius: 20px;
+    background: #eb423f;
+    border: none;
+    color: white;
+    box-shadow: #2d234266 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+    font-size: 22px;
+    cursor: pointer;
+}
+.news-letter button:hover{
+    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #888b9e 0 -3px 0 inset;
+    transform: translateY(-2px);
+}

@@ -1,0 +1,75 @@
+.LoginSignup{
+    width: 100%;
+    height: 90vh;
+    background: #c25d5bfb;
+    padding-top: 100px;
+}
+
+.container{
+    width: 580px;
+    height: 600px;
+    background: white;
+    margin: auto;
+    padding: 40px 60px;
+    border-radius: 5px;
+}
+
+.container h1{
+    margin: 20px 0px;
+}
+
+.fields{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.fields input{
+    height: 60px;
+    width: 100%;
+    padding-left: 20px;
+    border: 1px solid #c9c9c9;
+    outline: none;
+    color: #5c5c5c;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.container button{
+    height: 55px;
+    width: 100%;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    margin: 20px;
+    margin-left: 12px;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    background-color: #eb423f;
+    border: none;
+    border-radius: 5px;
+    box-shadow: #2d234266 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+    cursor: pointer;
+}
+
+.login{
+    color: #5c5c5c;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.login span{
+    color: #ff4141;
+    font-weight: 600;
+}
+.agree{
+    display: flex;
+    align-items: center;
+    color: #5c5c5c;
+    margin-top: 15px;
+    gap: 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
