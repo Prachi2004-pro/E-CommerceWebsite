@@ -26,5 +26,48 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     row-gap: 80px;
+}
 
+@media(max-width:1280px){
+    .banner{
+        margin: 20px auto;
+        width: 90%;
+    }
+    .indexSort{
+        width: 90%;
+        margin: auto;
+    }
+    .sort{
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+    .indexSort p{
+        font-size: 12px;
+    }
+    .products{
+        width: 90%;
+        margin: 10px auto;
+        row-gap: 40px;
+    }
+    .products .item{
+        margin: auto;
+    }
+}
+
+@media(max-width:800px){
+    .banner{
+        width: 95%;
+    }
+    .products{
+        width: 95%;
+    }
+}
+
+@media(max-width:500px){
+    .banner{
+        width: 95%;
+    }
+    .products{
+        grid-template-columns: 1fr 1fr;
+    }
 }

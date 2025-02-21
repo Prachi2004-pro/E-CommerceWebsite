@@ -10,3 +10,30 @@
     text-transform: capitalize;
     background-color: #e8f4ff;
 }
+
+@media(max-width:1280px){
+    .breadcrum{
+        margin: 30px 60px;
+        font-size: 14px;
+    }
+}
+
+@media(max-width:1024px){
+    .breadcrum{
+        margin: 25px 80px;
+        font-size: 12px;
+    }
+}
+
+@media(max-width:800px){
+    .breadcrum{
+        margin: 25px 50px;
+        font-size: 12px;
+    }
+}
+
+@media(max-width:500px){
+    .breadcrum{
+        font-size: 10px;
+    }
+}

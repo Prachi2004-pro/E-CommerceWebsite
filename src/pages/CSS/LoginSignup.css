@@ -73,3 +73,57 @@
     font-size: 18px;
     font-weight: 500;
 }
+
+@media(max-width:1280px){
+    .LoginSignup{
+        padding-top: 50px;
+    }
+    .container{
+        width: auto;
+        max-width: 500px;
+        max-height: 500px;
+    }
+    .container h1{
+        margin: 10px 0px;
+    }
+    .fields{
+        gap: 8px;
+        margin-top: 15px;
+    }
+    .fields input{
+        height: 50px;
+        width: 95%;
+    }
+    .container button{
+        width: 95%;
+    }.login{
+        font-size: 16px;
+    }
+    .agree{
+        font-size: 14px;
+        gap: 10px;
+    }
+}
+
+@media(max-width:800px){
+    /* .LoginSignup{
+        padding-top: 50px;
+    } */
+    .container{
+        padding: 20px 30px;
+    }
+    .container h1{
+        font-size: 26px;
+    }
+    .fields{
+        margin-top: 10px;
+    }
+    .fields input{
+        height: 45px;
+        /* width: 95%; */
+    }
+    .container button{
+        height: 50px;
+        font-size: 16px;
+    }
+}

@@ -7,6 +7,7 @@ import hero_imag from '../Assets/hero_image.png'
 export const Hero = () => {
   return (
     <div className='hero'>
+      {/* left */}
         <div className="hero-left">
           <h2>NEW ARRIVALS ONLY</h2>
           <div>
