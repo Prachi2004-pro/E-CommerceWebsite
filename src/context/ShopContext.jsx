@@ -18,15 +18,28 @@ const ShopContextProvider = (props) => {
     const [cartItem, setCartItems] = useState(getDefaultCart());
 
     useEffect(()=>{
-        fetch('http://localhost:4000/allproducts')
+        fetch('https://e-commerce-backend-59ko.onrender.com/allproducts')
         .then((response)=>response.json())
         .then((data)=>setAll_Product(data))
+
+        if (localStorage.getItem('auth-token')) {
+            fetch('https://e-commerce-backend-59ko.onrender.com/getcartitems',{
+                method:'POST',
+                headers:{
+                    Accept:'application/form-data',
+                    'auth-token':`${localStorage.getItem('auth-token')}`,
+                    'Content-Type':'application/json',
+                },
+                body:"",
+            }).then((response)=>response.json())
+            .then((data)=>setCartItems(data));
+        }
     },[])
 
     const addToCart = (itemId)=>{
         setCartItems((prev)=>({...prev,[itemId]:prev[itemId]+1}))
         if (localStorage.getItem('auth-token')) {
-            fetch('http://localhost:4000/addtocart',{
+            fetch('https://e-commerce-backend-59ko.onrender.com/addtocart',{
                 method:'POST',
                 headers:{
                     Accept:'application/form-data',
@@ -40,7 +53,20 @@ const ShopContextProvider = (props) => {
         }
     }
     const removeFromCart = (itemId)=>{
-        setCartItems((prev)=>({...prev,[itemId]:prev[itemId]-1}))
+        setCartItems((prev)=>({...prev,[itemId]:prev[itemId]-1}));
+        if(localStorage.getItem('auth-token')){
+            fetch('https://e-commerce-backend-59ko.onrender.com/removefromcart',{
+                method:'POST',
+                headers:{
+                    Accept:'application/form-data',
+                    'auth-token':`${localStorage.getItem('auth-token')}`,
+                    'Content-Type':'application/json',
+                },
+                body:JSON.stringify({"itemId":itemId}),
+            })
+            .then((response)=>response.json())
+            .then((data)=>console.log(data));
+        }
     }
 
     // total CartAmount function
