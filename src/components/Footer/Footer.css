@@ -95,3 +95,9 @@
         font-size: 13px;
     }
 }
+@media(max-width:500px){
+    .link{
+        padding-left: 10px;
+        font-size: 15px;
+    }
+}

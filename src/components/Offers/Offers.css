@@ -1,28 +1,27 @@
 .Offers{
     width: 60%;
-    height: 60vh;
+    height: 80vh;
     display: flex;
     align-items: center;
     margin: auto;
-    padding: 0px 140px;
+    padding: 0px 80px;
     margin-bottom: 150px;
     border-radius: 20px;
-    /* background: linear-gradient(180deg,white, #eb90e0f3,white 100%); */
-    background: linear-gradient(160deg, white, #eb90e0f3, white, #eb90e0f3, white 100%);
+    background: linear-gradient(to right, #00c6ff, #0072ff); 
 }
 .left{
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
-
 }
 
 .left h1{
     color: #171717;
     font-size: 80px;
     font-weight: 600;
-}
+    /* padding-left: -10px; */
+}  
 
 .left p{
     color: #171717;
@@ -32,7 +31,7 @@
 
 .left button{
     width: 270px;
-    height: 60px;
+    height: 55px;
     border-radius: 75px;
     background: #eb423f;
     border: none;
@@ -55,18 +54,10 @@
     justify-content: flex-end;
     /* padding-top: 50px; */
 }
-/* .right img{
-    height: 550px;
-    padding-left: 415px;
-} */
-
-/* .offer-right img{
-    width: 650px;
-    height: 400px;
-    display: flex;
-    margin-top: -250px;
-    margin-right: -50px;
-} */
+.right img{
+    width: 450px;
+    padding-right: -10px;
+}
 
 @media(max-width:1280px){
     .Offers{
@@ -79,6 +70,9 @@
     .left p{
         font-size: 18px;
     }
+    .right{
+        padding-top: 10px;
+    }
     .right img{
         width: 400px;
     }
@@ -86,9 +80,6 @@
         width: 220px;
         height: 50px;
         font-size: 18px;
-    }
-    .right{
-        padding-top: 10px;
     }
 }
 
@@ -114,6 +105,9 @@
     }
     .right{
         padding-top: 10px;
+    }
+    .right img{
+        width: 240px;
     }
 }
 
@@ -150,13 +144,13 @@
     .left p{
         font-size: 8px;
     }
-    .right img{
-        width: 150px;
-    }
     .left button{
         width: 100px;
         height: 25px;
         font-size: 9px;
         margin-top: 15px;
+    }
+    .right img{
+        width: 130px;
     }
 }
