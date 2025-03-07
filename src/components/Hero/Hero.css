@@ -48,7 +48,7 @@
     font-weight: 500;
 }
 .latest-btn:hover{
-    box-shadow: 5px 5px 0px 2px black;
+    box-shadow: 2px 2px 0px 2px black;
     transform: translateY(-2px);
 }
 .hero-right{

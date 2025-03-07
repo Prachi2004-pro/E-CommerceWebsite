@@ -33,7 +33,7 @@
 .social-icons{
     display: flex;
     gap: 20px;
-}
+}  
 
 .containerBox{
     padding: 10px;
@@ -42,6 +42,9 @@
     border: 1px solid #ebebeb;
     border-radius: 100px;
     cursor: pointer;
+}
+.containerBox:hover{
+    background: #f1f0f0;
 }
 .container img{
     height: 35px;
