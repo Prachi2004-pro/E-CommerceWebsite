@@ -2,12 +2,13 @@
     width: 100%;
     height: 90vh;
     background: #c25d5bfb;
-    padding-top: 100px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .container{
     width: 580px;
-    height: 600px;
+    height: 580px;
     background: white;
     margin: auto;
     padding: 40px 60px;
@@ -15,14 +16,14 @@
 }
 
 .container h1{
-    margin: 20px 0px;
+    margin: 10px 0px;
 }
 
 .fields{
     display: flex;
     flex-direction: column;
     gap: 15px;
-    margin-top: 20px;
+    /* margin-top: 20px; */
 }
 
 .fields input{
@@ -50,8 +51,11 @@
     background-color: #eb423f;
     border: none;
     border-radius: 5px;
-    box-shadow: #2d234266 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
     cursor: pointer;
+}
+.container button:hover{
+    box-shadow: 2px 2px 2px 2px black;
+    transform: translateY(-2px);
 }
 
 .login{
@@ -76,7 +80,7 @@
 
 @media(max-width:1280px){
     .LoginSignup{
-        padding-top: 50px;
+        padding-top: 80px;
     }
     .container{
         width: auto;
@@ -106,9 +110,6 @@
 }
 
 @media(max-width:800px){
-    /* .LoginSignup{
-        padding-top: 50px;
-    } */
     .container{
         padding: 20px 30px;
     }
@@ -120,6 +121,33 @@
     }
     .fields input{
         height: 45px;
+        /* width: 95%; */
+    }
+    .container button{
+        height: 50px;
+        font-size: 16px;
+    }
+}
+
+@media(max-width:500px){
+    .LoginSignup{
+        height: 80vh;
+        margin-bottom: 20px;
+    }
+    .container{
+        max-width: 300px;
+        max-height: 500px;
+        padding: 20px 30px;
+    }
+    .container h1{
+        font-size: 26px;
+    }
+    .fields{
+        margin-top: 10px;
+    }
+    .fields input{
+        height: 45px;
+        font-size: 16px;
         /* width: 95%; */
     }
     .container button{

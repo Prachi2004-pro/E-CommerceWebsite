@@ -49,26 +49,25 @@
 .login-cart button {
   align-items: center;
   border: 0;
-  border-radius: 65px;
+  border-radius: 10px;
   background-color: #eb423f;
   color: white;
-  box-shadow: #2d234266 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
   cursor: pointer;
   height: 40px;
   width: 130px;
   font-size: 18px;
 }
 .login-cart button:hover {
-  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #888b9e 0 -3px 0 inset;
-  transform: translateY(-2px);
+    box-shadow: 2px 2px 2px 1px black;
+    transform: translateY(-2px);
 }
 .cart-count{
-    width: 22px;
-    height: 22px;
+    width: 18px;
+    height: 18px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -32px;
+    margin-top: -30px;
     margin-left: -58px;
     font-size: 14px;
     border-radius: 11px;

@@ -31,7 +31,7 @@
     background: white;
     width: 730px;
     height: 70px;
-    border-radius: 20px;
+    border-radius: 10px;
     border: 1px solid #e3e3e3;
 }
 
@@ -48,17 +48,15 @@
 .news-letter div button{
     width: 200px;
     height: 70px;
-    border-radius: 20px;
+    border-radius: 10px;
     background: #eb423f;
     border: none;
     color: white;
-    box-shadow: #2d234266 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
     font-size: 22px;
     cursor: pointer;
 }
 .news-letter button:hover{
-    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #888b9e 0 -3px 0 inset;
-    transform: translateY(-2px);
+    background: #eb0905;
 }
 
 @media(max-width:1280px){

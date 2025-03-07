@@ -25,6 +25,8 @@ export const Hero = () => {
         </div>
         {/* right */}
         <div className="hero-right">
+          <div className="circle">
+          </div>
           <img src={hero_imag} alt="hero_image" />
         </div>
     </div>
